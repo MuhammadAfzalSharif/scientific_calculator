@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scientific calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="stat-body">
+        <ul>
+            <li class="mean">Calculate Mean (Click Me)</li>
+            <li class="median">Calculate Median (Click Me)</li>
+            <li class="mode">Calculate Mod (Click Me)</li>
+            <li class="vari">Calculate variance (Click Me)</li>
+            <li class="sd">Calculate stand deviation (Click Me)</li>
+            <li class="min">Calculate mini value (Click Me)</li>
+            <li class="max">Calculate max value (Click Me)</li>
+        </ul>
+    </div>
+
+    <div class="matrix-body">
+        <ul>
+            <li class="det">Determinant of Matrix (Click Me)</li>
+            <li class="trace">Trace of Matrix (Click Me)</li>
+            <li class="transpose">Transpose of Matrix (Click Me)</li>
+        </ul>
+    </div>
+    <section class="calculator-container">
+        <div class="calculator">
+            <!-- upper section              -->
+            <div class="upper-section">
+                <div class="sec1">
+                    <div class="info">
+                        <h4>Calculator</h4>
+                        <p>fx-991EX PLUS</p>
+                        <h6>Made by Afzal</h6>
+                    </div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+
+            <!-- screen              -->
+            <div class="screen">
+                <input type="text" class="input" />
+            </div>
+            <!-- buttons             -->
+            <div class="buttons">
+                <button class="cal-btn on-of off">Off</button>
+                <button class="cal-btn" style="visibility: hidden"></button>
+                <button class="cal-btn imp" style="visibility: hidden"></button>
+                <button class="cal-btn" style="visibility: hidden"></button>
+                <button class="cal-btn on-of on">On</button>
+
+                <button class="cal-btn matrix">Matrix</button>
+                <button class="cal-btn stats">Stats</button>
+
+                <button class="cal-btn lcm" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-content="Click this button,put unknown value and hit '=' button ">
+                    LCM
+                </button>
+
+                <button class="cal-btn hcf">HCF</button>
+
+                <button class="cal-btn sqrt">sqrt</button>
+
+                <button class="cal-btn x">x^n <sup></sup></button>
+
+                <button class="cal-btn log">Log10</button>
+
+                <button class="cal-btn sin">sin</button>
+
+                <button class="cal-btn cos">cos</button>
+
+                <button class="cal-btn tan">tan</button>
+
+                <button class="cal-btn cot">cot</button>
+
+                <button class="cal-btn sec">sec</button>
+
+                <button class="cal-btn cosec">cosec</button>
+
+                <button class="cal-btn pi" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-content="π will consider as word pi ">
+                    π
+                </button>
+
+                <button class="cal-btn fact" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-content="Click this button,put unknown value and hit '=' button ">
+                    n!
+                </button>
+
+                <button class="cal-btn cr">(</button>
+                <button class="cal-btn cl">)</button>
+                <button class="cal-btn comma">,</button>
+                <span class="cal-btn ncr" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-content="For nCr : just give value of n and r separated with comma like 7,2 ">
+                    <button class="cal-btn ncr"><sup>n</sup>C<sub>r</sub></button>
+                </span>
+
+                <span class="cal-btn npr" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                    data-bs-content="For nPr : just give value of n and r separated with comma like 7,2 ">
+                    <button class="cal-btn npr"><sup>n</sup>P<sub>r</sub></button>
+                </span>
+
+                <button class="cal-btn seven">7</button>
+                <button class="cal-btn eight">8</button>
+                <button class="cal-btn nine">9</button>
+                <button class="cal-btn del">del</button>
+                <button class="cal-btn ac">AC</button>
+                <button class="cal-btn four">4</button>
+                <button class="cal-btn five">5</button>
+                <button class="cal-btn six">6</button>
+                <button class="cal-btn div">/</button>
+                <button class="cal-btn mul">*</button>
+                <button class="cal-btn one">1</button>
+                <button class="cal-btn two">2</button>
+                <button class="cal-btn three">3</button>
+                <button class="cal-btn add">+</button>
+                <button class="cal-btn sub">-</button>
+                <button class="cal-btn zero">0</button>
+                <button class="cal-btn dot">.</button>
+                <button class="cal-btn mod">%</button>
+                <button class="cal-btn ans">Ans</button>
+                <button class="cal-btn equal">=</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/13.0.2/math.js"
+        integrity="sha512-KlD5DAsnVDDW6zNRLx8vmmcl+4RIQe7TPds295Tx5wYW9PwfPcnlKF+MMs0JzlyuOMzqIBtL8Z64dAXR52oRgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
